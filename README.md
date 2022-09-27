@@ -1,4 +1,4 @@
-# Utilização do método Mobile First
+# Utilização do método Mobile First 📱
 
 Utilização do método mobile first com responsividade.
 
