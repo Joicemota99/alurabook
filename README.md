@@ -6,7 +6,7 @@ Utilização do método mobile first com responsividade.
 
 🛑 Pré-Requisitos
 
-✅ Conhecer a sintaxe e semântica HTML 
+✅ Conhecer a sintaxe e semântica HTML </br>
 ✅ Conhecimento básico de CSS
 ✅ Conhecimento básico de JS(Java Script) 
 ✅ Conhecimento básico do Figma 
