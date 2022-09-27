@@ -1,4 +1,4 @@
-Utilização do método Mobile First
+#Utilização do método Mobile First
 
 Utilização do método mobile first com responsividade.
 
@@ -10,9 +10,13 @@ Utilização do método mobile first com responsividade.
 👣 Passo-a-Passo
 
 Utilizando o Root para padronização de cores.
+
 Utilizando separação de pastas para criação individual de estilos.
+
 Utilizando o figma para leitura e auxilio na criação do projeto.
+
 Utilizando media-queries para responsividade.
+
 Utilizando Swiper API.
 
 📚 Mobile First
