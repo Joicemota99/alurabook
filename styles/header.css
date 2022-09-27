@@ -1,0 +1,142 @@
+.cabecalho_menu_hamburguer{
+    width:24px;
+    height:24px;
+    background-image: url("../img/Menu.svg");
+    /*Ao colocar o padding de 1em, ele se repetia 
+    varias vezes por que ultrapassava o 24 px */
+    background-repeat: no-repeat;
+    /*Centralizar imagem */
+    background-position:center;
+    display: inline-block;
+}
+.cabecalho{
+    background-color:var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/*Container serve para alinhar as imagens no centro */
+.container{
+    display: flex;
+    align-items: center;
+}
+ /* Configuração de todas as imagens dentro do container */
+.container_imagem{
+    /*Espaçamento entre as imagens */
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+    width:60vw;
+}
+/*Forma sem usar o JS para abrir o hamburguer*/
+.container_botao:checked ~.lista-menu{
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight:700px;
+}
+
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container_botao{
+    display: none;
+}
+.container__titulo, .opcoes{
+    display:none;
+}
+
+.container__texto{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container__titulo,
+    .container__titulo--negrito{
+        font-family: var(--fonte-secundario);
+        font-size:30px
+    }
+
+    .container__titulo{
+        font-weight:400;
+        display:block;
+    }
+
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display:flex;
+        font-family: var(--fonte-secundario);
+    }
+
+    .opcoes__item{
+        display:flex;
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opcao__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container_imagem-transparente{
+        display: none;
+    }
+
+    .cabecalho_menu_hamburguer{
+        display: none;
+    }
+
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1728px){
+    .container__link{
+        display:flex;
+        align-items: center;
+        text-decoration: none;
+        color:var(--preto);
+        cursor: pointer;
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+
+    .container__texto{
+        display:block;
+    }
+}
